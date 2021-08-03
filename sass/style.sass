@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$red: #D5422D;
+$white: #F5F0E5;
+$blue: #0F2739;
+$yellow: #FFBA00;
+
+* 
+    margin: 0;
+    padding: 0;
+
+body 
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
+
+.logo 
+    width: 40px;
+    img
+        width: 100%
+
+.logo_text 
+    font-weight: 400;
+    font-size: 11px;
+    padding-left: 0.5rem;
+    line-height: 1;
+    color: $blue;
+
+.logo_text span 
+     color: $red;
+     font-weight: 900;
+     text-transform: uppercase;
+     font-size: 18px;
+  
+.menu ul 
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    li a
+        text-decoration: none;
+        color: $blue;
+        font-size: 12px;
+    a:hover
+        color: $red;
+
+.translatemiddle 
+    transform: translate(-0%,-50%)!important;
+
+.link ul
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li a 
+        color: $red;
+        font-size: 18px;
+        font-weight: 900;
+
+.Bestseller, .gidro, .chargingDevice
+    &_header
+        color: $red;
+        font-size: 23.5px;
+        text-decoration: underline;
+        font-weight: bold;
+.card 
+    width: 18rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    &:hover
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+         transition: all 0.5s ease;
+    img
+        width: 100%;
+        height: 80%;
+
+@media screen and ( max-width: 480px  )
+    .logo_block
+        display: flex;
+        justify-content: center;
+
+    .translatemiddle 
+        transform: translate(-0%,-100%)!important;
