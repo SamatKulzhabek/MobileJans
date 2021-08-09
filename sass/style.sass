@@ -13,6 +13,10 @@ body
     background-color: #FFF;
     font-family: 'Roboto', sans-serif;
 
+header
+    background: $blue;
+    color: $white;
+
 .logo 
     width: 40px;
     img
@@ -23,7 +27,7 @@ body
     font-size: 11px;
     padding-left: 0.5rem;
     line-height: 1;
-    color: $blue;
+    color: $white;
 
 .logo_text span 
      color: $red;
@@ -39,7 +43,7 @@ body
     flex-wrap: wrap;
     li a
         text-decoration: none;
-        color: $blue;
+        color: $white;
         font-size: 12px;
     a:hover
         color: $red;
@@ -53,9 +57,12 @@ body
     justify-content: space-around;
     align-items: center;
     li a 
-        color: $red;
+        color: $white;
         font-size: 18px;
         font-weight: 900;
+
+.Bestseller
+        padding-top: 5rem;
 
 .Bestseller, .gidro, .chargingDevice
     &_header
@@ -90,3 +97,8 @@ body
 
     .translatemiddle 
         transform: translate(-0%,-100%)!important;
+
+@media screen and ( max-width: 757px ) 
+    .logo_block
+        display: flex;
+        justify-content: center;

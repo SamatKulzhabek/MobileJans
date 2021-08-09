@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/e3388c61a2.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-  <header class="mb-5">
+  <header class="mb-5 fixed-top">
     <div class="container">
       <div class="row mt-3">
         <div class="col-md-4 col-sm-12 col-xs-12 d-flex logo_block">
@@ -30,13 +31,13 @@
         <div class="col-md-6 col-sm-12 col-xs-12">
           <nav class="menu">
             <ul>
-              <li><a href="#" class="position-relative">Гидрогелевая пленка <span
+              <li><a href="#Bestseller" class="scroll-to">Хит продаж</a></li>
+              <li><a href="#gidro" class="position-relative scroll-to">Гидрогелевая пленка <span
                     class="position-absolute top-0 start-100 translatemiddle badge rounded-pill bg-danger font-size-12">New</span></a>
               </li>
-              <li><a href="#">Зарядные устройства</a></li>
-              <li><a href="#">Чехлы</a></li>
-              <li><a href="#">Наушники</a></li>
-              <li><a href="https://jivo.chat/CWeH0UfYq8">Обсуждение</a></li>
+              <li><a href="#chargingDevice" class="scroll-to">Зарядные устройства</a></li>
+              <li><a href="#case" class="scroll-to">Чехлы</a></li>
+              <li><a href="#" class="scroll-to">Наушники</a></li>
             </ul>
           </nav>
         </div>
@@ -51,7 +52,7 @@
       </div>
     </div>
   </header>
-  <section class="Bestseller">
+  <section class="Bestseller" id="Bestseller">
     <div class="container">
       <div class="row mb-3">
         <div class="col-md-12">
@@ -100,7 +101,7 @@
       </div>
     </div>
   </section>
-  <section class="gidro">
+  <section class="gidro" id="gidro">
     <div class="container">
       <div class="row mb-3">
         <div class="col-md-12">
@@ -108,7 +109,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+        <div class="col-md-12 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
           <div class="card d-flex w-100">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -150,7 +151,7 @@
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-descr" role="tabpanel" aria-labelledby="nav-descr-tab">
                   <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
                       <div class="card-body">
                         <h5 class="card-title">Гидрогелевая пленка</h5>
                         <p class="card-text">
@@ -177,7 +178,7 @@
                   </div>
                 <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
                   <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
                       <iframe width="100%" height="315" src="https://www.youtube.com/embed/1gPDwFyYoPM"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -193,7 +194,7 @@
       </div>
     </div>
   </section>
-  <section class="chargingDevice">
+  <section class="chargingDevice" id="chargingDevice">
     <div class="container">
       <div class="row mb-3">
         <div class="col-md-12">
@@ -217,7 +218,7 @@
               <div class="col-md-12 text-center">
                 <h2 class="Bestseller_header">Хит продаж</h2>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+              <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
                 <div class="card d-flex">
                   <img src="img/charge/Samsung.jpg" class="card-img-top" alt="samsung">
                   <div class="card-body">
@@ -226,7 +227,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+              <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
                 <div class="card d-flex">
                   <img src="img/charge/huawie.jpg" class="card-img-top" alt="huawie">
                   <div class="card-body">
@@ -235,7 +236,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+              <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
                 <div class="card d-flex">
                   <img src="img/charge/lg.jpg" class="card-img-top" alt="Lg">
                   <div class="card-body">
@@ -244,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+              <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
                 <div class="card d-flex">
                   <img src="img/charge/iphone.jpg" class="card-img-top" alt="iphone">
                   <div class="card-body">
@@ -260,7 +261,7 @@
               <div class="col-md-12 text-center">
                 <h2 class="Bestseller_header">Хит продаж</h2>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+              <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
                 <div class="card d-flex">
                   <img src="img/hoco.jpg" class="card-img-top" alt="hoco">
                   <div class="card-body">
@@ -283,7 +284,7 @@
       </div>
     </div>
   </section>
-  <section class="case">
+  <section class="case" id="case">
     <div class="container">
       <div class="row mb-3">
         <div class="col-md-12">
@@ -292,27 +293,27 @@
       </div>
       <div class="case_type">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+          <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div class="card">
               <img src="img/case/1.jpg" class="card-img-top" alt="case">
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+          <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div class="card">
               <img src="img/case/2.jpg" class="card-img-top" alt="case">
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+          <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div class="card">
               <img src="img/case/3.jpg" class="card-img-top" alt="case">
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+          <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
             <div class="card">
               <img src="img/case/4.jpg" class="card-img-top" alt="case">
             </div>
           </div>
-          <div class="col-md-12 col-sm-6 col-xs-12 mb-3 d-flex justify-content-center">
+          <div class="col-md-12 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
             <a href="https://www.instagram.com/m_mobile_jans/" class="btn btn-danger">Выбрать для своего смартфона <i
                 class="fas fa-mobile-alt"></i></a>
           </div>
@@ -321,6 +322,7 @@
     </div>
   </section>
   <script src="//taplink.cc/kulzhabekkk/widget/" async></script>
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
